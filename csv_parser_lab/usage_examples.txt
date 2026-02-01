@@ -1,0 +1,18 @@
+CSV Parser Usage Examples
+========================
+
+Basic Statistics:
+python3 csv_parser.py sample_data.csv --column salary
+python3 csv_parser.py employees.csv --column age
+
+Filtered Statistics:
+python3 csv_parser.py sample_data.csv --column salary --filter department Engineering
+python3 csv_parser.py employees.csv --column performance_rating --filter department Marketing
+
+Show Filtered Data:
+python3 csv_parser.py sample_data.csv --column salary --filter department HR --show-data
+python3 csv_parser.py employees.csv --column age --filter department Engineering --show-data
+
+Advanced Examples:
+python3 csv_parser.py employees.csv --column years_experience --filter department Engineering --show-data
+python3 csv_parser.py employees.csv --column salary --filter name "John Smith"
